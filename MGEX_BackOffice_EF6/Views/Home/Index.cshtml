@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Quick Links</h2>
+        <ul>
+            <li>@Html.ActionLink("Wheat Latest Activity", "Wheat", "Home")</li>
+            <li>@Html.ActionLink("AJC Latest Activity", "AJC", "Home")</li>
+            <li>@Html.ActionLink("Index Latest Activity", "Indexes", "Home")</li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Settlements</h2>
+        <ul>
+            <li><a asp-controller="Settlements" asp-action="Index">Settlements Home</a></li>
+            <li><a asp-controller="Settlements" asp-action="AJCSettlements">AJC Settlements</a></li>
+            <li><a asp-controller="Settlements" asp-action="WheatSettlements">Wheat Settlements</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Closing sheets</h2>
+        <ul>
+            <li><a asp-controller="Closing" asp-action="Index">Closing Sheets Home</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Time and Sales</h2>
+        <ul>
+            <li><a asp-controller="TimeSales" asp-action="Index">Time and Sales Home</a></li>
+        </ul>
+    </div>
+</div>

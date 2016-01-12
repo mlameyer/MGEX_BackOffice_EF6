@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "AJC Latest Activity";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AJC Latest Activity</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-8 tableContainer">
+            <table id="results_table" class="table table-bordered table-condensed table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Bid Price</th>
+                        <th>Offer Price</th>
+                        <th>Bid Seq Num</th>
+                        <th>Offer Seq Num</th>
+                        <th>Bid Time</th>
+                        <th>Offer Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.SpreadList)
+                    {
+                        <tr>
+                            <td>@item.Product</td>
+                            <td>@item.B_Price</td>
+                            <td>@item.O_Price</td>
+                            <td>@item.B_Seq_Num</td>
+                            <td>@item.O_Seq_Num</td>
+                            <td>@item.B_Time</td>
+                            <td>@item.O_Time</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <button id="refresh_btn" class="btn btn-primary left">Refresh</button>
+        </div>
+    </div>
+</body>
+</html>
