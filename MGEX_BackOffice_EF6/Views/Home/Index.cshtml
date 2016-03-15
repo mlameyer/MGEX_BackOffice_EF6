@@ -16,9 +16,9 @@
     <div class="col-md-3">
         <h2>Settlements</h2>
         <ul>
-            <li><a asp-controller="Settlements" asp-action="Index">Settlements Home</a></li>
-            <li><a asp-controller="Settlements" asp-action="AJCSettlements">AJC Settlements</a></li>
-            <li><a asp-controller="Settlements" asp-action="WheatSettlements">Wheat Settlements</a></li>
+            <li>@Html.ActionLink("Settlements Home", "Index", "Settlements")</li>
+            <li>@Html.ActionLink("AJC Settlements", "AJCSettlement", "Settlements")</li>
+            <li>@Html.ActionLink("Wheat Settlements", "WheatSettlement", "Settlements")</li>
         </ul>
     </div>
     <div class="col-md-3">

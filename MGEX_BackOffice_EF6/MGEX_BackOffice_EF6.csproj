@@ -171,6 +171,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SettlementsController.cs" />
     <Compile Include="DAL\WheatLastDBContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -244,6 +245,9 @@
     <Content Include="Views\Home\Wheat.cshtml" />
     <Content Include="Views\Home\AJC.cshtml" />
     <Content Include="Views\Home\Indexes.cshtml" />
+    <Content Include="Views\Settlements\Index.cshtml" />
+    <Content Include="Views\Settlements\WheatSettlement.cshtml" />
+    <Content Include="Views\Settlements\AJCSettlement.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

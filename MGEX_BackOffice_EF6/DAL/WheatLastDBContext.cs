@@ -32,8 +32,8 @@ namespace MGEX_BackOffice_EF6.DAL
                             thisSpread.O_Price = Convert.ToDecimal(row["O_Price"]);
                             thisSpread.B_Seq_Num = Convert.ToInt32(row["B_Seq_No"]);
                             thisSpread.O_Seq_Num = Convert.ToInt32(row["O_Seq_No"]);
-                            thisSpread.B_Time = Convert.ToInt32(row["B_Time"]);
-                            thisSpread.O_Time = Convert.ToInt32(row["O_Time"]);
+                            thisSpread.B_Time = Convert.ToDecimal(row["B_Time"]);
+                            thisSpread.O_Time = Convert.ToDecimal(row["O_Time"]);
                             spreadList.Add(thisSpread);
                         }
                     }
